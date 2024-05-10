@@ -1,0 +1,16 @@
+.header {
+    background-color: orange;
+    height: 60px;
+    padding-left: 50%;
+}
+
+.search-container {
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 5px;
+    text-align: left;
+    padding: 5px;
+}
+
+#citySearchBtn {
+}
