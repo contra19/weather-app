@@ -1,16 +1,105 @@
+/* Header styles */
 .header {
-    background-color: orange;
-    height: 60px;
-    padding-left: 50%;
+    text-align: right;
+    background: linear-gradient(to right, #4CAF50, #2196F3); /* Gradient background */
+    padding: 20px 0; /* Adjust padding as needed */
 }
 
+/* Row styles */
+.row {
+    align-items: stretch; /* Ensure columns have equal height */
+    margin: 0px;
+}
+
+/* Column styles */
+.col-md-3 {
+    margin-top: 10px;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+.col-md-9 {
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    padding: 0px 5px;
+}
+
+.col {
+    padding: 0px;
+}
+
+/* Previous city styles */
+#previousCity {
+    text-align: center;
+}
+
+/* Container styles */
+.container {
+    width: 100%;
+    padding: 0px;
+    margin: 0px 10px;
+}
+
+/* Search container styles */
 .search-container {
+    width: 100%;
+    padding: 10px;
     border: 2px solid black;
     border-radius: 10px;
-    margin: 5px;
-    text-align: left;
+    margin-bottom: 10px;
+}
+
+/* City buttons styles */
+#cityButtons {
+    width: 100%;
+    border-top: solid 2px slategray;
     padding: 5px;
 }
 
 #citySearchBtn {
+    margin-top: 5px;
+}
+
+.citySearchBtn {
+    width: 100%;
+    margin-top: 5px;
+}
+
+/* Main weather container styles */
+.main-weather-container {
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 10px 0px;
+    padding: 0px;
+}
+
+/* Next 5 days weather cards styles */
+.next5DaysWeatherCards {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 10px;
+    padding: 0px;
+}
+
+.next5DaysWeatherCard {
+    box-sizing: border-box;
+    flex: 1 0 auto;
+    margin-right: 5px;
+}
+
+.next5DaysWeatherCard:last-child {
+    margin-right: 0;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+    .next5DaysWeatherCard {
+        flex: 1 0 33.33%; /* Adjust width to fit three cards per row */
+    }
+}
+
+@media (max-width: 576px) {
+    .next5DaysWeatherCard {
+        flex: 1 0 50%; /* Adjust width to fit two cards per row */
+    }
 }
