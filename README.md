@@ -55,16 +55,19 @@ No installation is required. This app can be accessed at https://contra19.github
     <figcaption>Use searchbox to find a U.S. city</figcaption>
     <img src="./assets/images/search.png" alt="searchbox" height="150">
   </figure>
+
 2. **View Weather Information**: The main weather card will display the current weather information for the selected city.
   <figure>
     <figcaption>Current weather is displayed</figcaption>
     <img src="./assets/images/main-weather-card.png" alt="current weather" height="150">
   </figure>
+
 3. **View Forecast**: Below the main weather card, you can view the forecast for the next five days.
   <figure>
     <figcaption>5 day forecast</figcaption>
     <img src="./assets/images/5-day-forecast.png" alt="5 day forecast" height="150">
   </figure>
+  
 4. **City Buttons**: City Buttons can be used to display cities that were already searched.
   <figure>
     <figcaption>City Buttons</figcaption>
