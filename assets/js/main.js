@@ -26,8 +26,7 @@ function createWeatherCard(city, state, weatherData) {
 function storeCityData() {
   // Get the city name from the input field
   const cityName = $('#citySearch').val().trim();
-  console.log('City Name:', cityName);
-
+  
   // Check if the city name is empty
   if (!cityName) {
     alert('Please enter a city name.');
@@ -128,11 +127,9 @@ function getCityInfo(cityName) {
 
       // Check if the city already exists in cityList
       const existingCityIndex = cityList.findIndex(city => city.city === data[0].name);
-      if (existingCityIndex !== -1) {
-        // City already exists, don't add it again
-        console.log(`${data[0].name} is already in the list.`);
-        // Optionally, you can display a message to the user here
-        alert('The selected city is already in the history list.\nPlease enter a new city or use the corresponding button to view the weather.');
+      // If city already exists, don't add it again
+      if (existingCityIndex !== -1) {        
+         alert('The selected city is already in the history list.\nPlease enter a new city or use the corresponding button to view the weather.');
         return;
       }
 
@@ -258,7 +255,6 @@ $(document).ready(function () {
   // Event listener for addTaskBtn
   $('#citySearchBtn').click(function (event) {
     event.preventDefault();
-    console.log('Button clicked'); // Log to check if button click event is firing
     storeCityData();
   });
 });
